@@ -16,3 +16,11 @@ print(lenguaje_texto.lang)
 texto_traducido = traductor.translate(texto, dest='en', src=lenguaje_texto.lang)
 
 print(texto_traducido.text)
+
+with open('texto-en.txt', 'w') as file:
+    file.write(texto_traducido.text)
+file.close()
+
+print('Paso6')
+print(type(file))
+print(file)

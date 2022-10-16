@@ -6,12 +6,12 @@ Video = pytube.YouTube('https://www.youtube.com/watch?v=2_0yQDOYHTM')
 
 print('Paso1')
 Audio = Video.streams.get_audio_only()
-Audio.download(filename='test.mp4')
+Audio.download(filename='test.mp3')
 
 print('Paso2')
 modelo = whisper.load_model('tiny')
 print('Paso3')
-resultado = modelo.transcribe('test.mp4')
+resultado = modelo.transcribe('test.mp3')
 
 print('Paso4')
 print(resultado['text'])
