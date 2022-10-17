@@ -1,3 +1,4 @@
+from fnmatch import translate
 import pytube
 import whisper
 
@@ -24,3 +25,22 @@ print('Paso6')
 print(type(resultado))
 print(type(file))
 print(file)
+
+
+'''
+print('Paso4.1')
+audio = whisper.load_audio('test.mp3')
+print(audio)
+audio = whisper.pad_or_trim(audio)
+print(audio)
+
+print('Paso4.2')
+mel = whisper.log_mel_spectrogram(audio).to(modelo.device)
+print(mel)
+
+print('Paso4.3')
+_, lg_audio = modelo.detect_language(mel)
+print(lg_audio)
+print('Paso4.3.1')
+print(f"Deteccion de lenguaje: {max(lg_audio, key=lg_audio.get)}")cls
+'''
