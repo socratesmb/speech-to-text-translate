@@ -17,7 +17,7 @@ audio = video.streams.get_audio_only()
 print('Paso 3')
 audio.download(filename='set.mp3')
 
-# Leeamos el modelo con whisper, para procesar, asignando el nivel de procesado
+# Creamos el modelo con whisper, para procesar, asignando el nivel de procesado
 print('Paso 4')
 modelo = whisper.load_model('small')
 
