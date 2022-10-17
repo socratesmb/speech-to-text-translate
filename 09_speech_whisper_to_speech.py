@@ -26,7 +26,7 @@ write('audio.wav', frecuencia, gravacion)
 
 # Creamos el modelo con whisper, para procesar, asignando el nivel de procesado => # https://github.com/openai/whisper#available-models-and-languages
 print('Paso 4')
-modelo = whisper.load_model('base')
+modelo = whisper.load_model('tiny')
 
 # Guardamos el modelo procesado con whisper
 print('Paso 5')
