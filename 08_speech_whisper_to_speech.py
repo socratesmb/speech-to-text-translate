@@ -1,10 +1,11 @@
+# La joya de la corona o como digo yo: Esto es lo melo nea
+
 import sounddevice as sd
 from scipy.io.wavfile import write
 import whisper
 from googletrans import Translator
 from gtts import gTTS
 from playsound import playsound
-import os
 
 traductor = Translator()
 
@@ -26,7 +27,7 @@ write('audio.wav', frecuencia, gravacion)
 
 # Creamos el modelo con whisper, para procesar, asignando el nivel de procesado => # https://github.com/openai/whisper#available-models-and-languages
 print('Paso 4')
-modelo = whisper.load_model('tiny')
+modelo = whisper.load_model('large') # Cambiar large por tiny o base para que sea rapido
 
 # Guardamos el modelo procesado con whisper
 print('Paso 5')
@@ -54,3 +55,5 @@ print('Fin Camino')
 # Reproducimos el mensaje
 # Recuerda cambiar la url de la carpeta para reproducir el audio, falla un monton si tiene nombres con -, evitar caracteres especiales
 playsound('D:/CodigosparaAprender/speech-to-text-translate/traduccion.mp3')
+
+# Tiempo de compilado actual 25 seg, se puede bajar. Disfrutalo

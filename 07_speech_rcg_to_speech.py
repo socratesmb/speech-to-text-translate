@@ -1,4 +1,4 @@
-# Traduccion y reproduccion de voz sin whisper, funciona muy bien cuando se habla en ingles, no tiene limite para hablar
+# Traduccion y reproduccion de voz sin whisper, funciona muy bien cuando se habla diferente a español, no tiene limite para hablar
 
 import speech_recognition as sr
 from googletrans import Translator

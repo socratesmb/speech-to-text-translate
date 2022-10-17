@@ -1,3 +1,5 @@
+# Este codigo es para crear una traduccion y voz artificial a partir de un video
+
 import whisper
 import pytube
 from googletrans import Translator
@@ -17,9 +19,9 @@ audio = video.streams.get_audio_only()
 print('Paso 3')
 audio.download(filename='set.mp3')
 
-# Creamos el modelo con whisper, para procesar, asignando el nivel de procesado
+# Creamos el modelo con Whisper, para procesar, asignando el nivel de procesado
 print('Paso 4')
-modelo = whisper.load_model('small')
+modelo = whisper.load_model('tiny')
 
 # Guardamos el modelo procesado con whisper
 print('Paso 5')
@@ -43,3 +45,5 @@ texto_voz = gTTS(texto_traducido.text, lang='en')
 # Ahora guardamos y generamos el audio final
 print('Fin Camino')
 texto_voz.save('traduccion.mp3')
+
+# Ahora lo puedes abrir y verificar si quedo todo bien
