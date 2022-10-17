@@ -1,4 +1,3 @@
-from pyparsing import White
 import pytube
 import whisper
 
