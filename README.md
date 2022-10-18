@@ -12,7 +12,7 @@ Como instalar ffmpeg => https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-w
 Estas otras librerías son necesarias para que funcionen los códigos
 
 ```
-pip install googletrans
+pip install googletrans==4.0.0rc1
 pip install gtts
 pip install SpeechRecognition
 pip install wavio
